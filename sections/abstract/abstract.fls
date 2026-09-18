@@ -1,0 +1,8 @@
+PWD c:\Users\rosfisch\Documents\GitHub\T2000-1-2-\sections\abstract
+INPUT C:\Users\rosfisch\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\rosfisch\Documents\GitHub\T2000-1-2-\sections\abstract\abstract.tex
+OUTPUT abstract.log
+INPUT C:\Program Files\LaTex\tex\latex\subfiles\subfiles.cls
+INPUT C:\Program Files\LaTex\tex\latex\subfiles\subfiles.cls
+INPUT C:\Program Files\LaTex\tex\latex\import\import.sty
+INPUT C:\Program Files\LaTex\tex\latex\import\import.sty

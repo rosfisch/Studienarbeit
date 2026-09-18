@@ -1,0 +1,13 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{Abkürzungsverzeichnis}{4}{section*.4}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{5}{section*.5}%
+\contentsline {section}{Zusammenfassung/Abstract}{6}{section*.6}%
+\contentsline {section}{\numberline {1}Einleitung}{7}{section.1}%
+\contentsline {section}{\numberline {2}Grundlagen}{7}{section.2}%
+\contentsline {section}{\numberline {3}Techologien}{7}{section.3}%
+\contentsline {section}{\numberline {4}Umsetzung}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Testumgebung}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Funktionstests}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Demo und Diskussion}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Mögliche Erweiterungen}{8}{subsection.5.1}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

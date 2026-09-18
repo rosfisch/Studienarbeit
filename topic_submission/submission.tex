@@ -1,0 +1,141 @@
+\documentclass[12pt]{scrartcl}
+
+%% twocolumn
+\usepackage{amsmath,amssymb}  % erleichtert Mathe 
+\usepackage{enumerate}% schicke Nummerierung
+\usepackage{enumitem}
+%Seitenzahlen
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+%Blocksatz
+\usepackage{ragged2e}
+%Tabelle
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{a4paper, margin=3cm}
+\usepackage{dblfloatfix}
+
+%Einbindung der versch. Dateien
+\usepackage{subfiles}
+
+%Bilder
+\usepackage{graphicx}
+%Code
+\usepackage{listings}
+\usepackage{color}
+\definecolor{eclipseStrings}{RGB}{42,0.0,255}
+\definecolor{eclipseKeywords}{RGB}{127,0,85}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+%Weblinks
+\usepackage{url}
+%Deutsche Sprache
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[thmmarks,amsmath,hyperref,noconfig]{ntheorem}
+\usepackage{xcolor}
+
+%Zeilenabstand
+\usepackage[onehalfspacing]{setspace}
+
+%Nicht nummerierte Abschnitte ins Inhaltsverzeichnis
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+
+\usepackage{wrapfig} % Paket für umfließende Objekte
+
+%Literaturverwaltung
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=numeric, sorting=none]{biblatex}
+\addbibresource{quellen/quellen.bib}
+
+% erlaubt es, Sätze, Definitionen etc. einfach durchzunummerieren.
+\newtheorem{satz}{Satz}[section] % Nummerierung nach Abschnitten
+\theorembodyfont{\upshape}
+\newcolumntype{x}[1]{!{\centering\arraybackslash\vrule width #1}}
+
+\usepackage{color}
+\definecolor{magenta}{rgb}{226,0,116}
+
+%Seitenzahlen
+\pagestyle{fancy}
+\fancyhf{}{}
+\fancyfoot[C]{Seite \thepage\ von \pageref{LastPage}}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  firstnumber=1,
+  stepnumber=1,
+  numbersep=8pt,
+  numbers=left,    
+  breaklines=true,
+  frame=lines,     
+  captionpos=b, 
+  numberstyle=\tiny\color{gray},
+  columns=fullflexible,
+  showstringspaces=false,
+  backgroundcolor=\color{backcolour},
+  }
+  \usepackage[
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    citecolor=codepurple,
+    menucolor=red,
+    runcolor=cyan
+  ]{hyperref}
+
+\begin{document}
+\begin{onehalfspacing}
+
+  \colorlet{numb}{magenta!60!black}
+\begin{titlepage}
+  
+  \centering
+  \begin{minipage}[b]{0.35\textwidth} 
+    \includegraphics[width=\linewidth]{../images/DHBW-Logo.png}
+  \end{minipage}\hfill% Horizontaler Platzhalter
+  \begin{minipage}[b]{0.38\textwidth} 
+    \includegraphics[width=\linewidth]{../images/images.png} 
+  \end{minipage}\par\vspace{1.3cm}
+  {\scshape\Large Praxisarbeit II\par}
+  \vspace{1cm}
+  {\huge Submission\par}
+  \vspace{2.5cm}
+  {\Large\itshape Rosalie Fischer\par}
+  \vspace{0.5cm}
+  {\large \today\par}
+  \vfill
+  \begin{table}[b]
+    \begin{center}
+      \begin{tabular}{rcl} 
+          \large $Kurs$ & & $$\textsc{TINF24C}$$ \\ 
+          \large $Matrikelnummer$ & & $$\textsc{3045197}$$ \\ 
+          \large $Bearbeitungszeitraum$ & & $$\textsc{12 Wochen}$$ \\ 
+          \large $Ausbildungsfirma$ & & $$\textsc{T-Systems International GmbH}$$ \\ 
+          \large$Betreuer\, der Ausbildungsfirma$ & & $$\textsc{Alexander Hatzold}$$ \\ 
+      \end{tabular}
+    \end{center}
+  \end{table}
+\end{titlepage}
+
+\author{Rosalie Fischer}
+\subtitle{Praxisbericht T1000}
+\newpage
+\section{Einleitung}
+asdasjfaf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{onehalfspacing}
+\end{document}
