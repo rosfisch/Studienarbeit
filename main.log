@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.2)  29 SEP 2026 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.2)  1 OCT 2026 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1089,7 +1089,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--192
 
  []
 
-[5] (./sections/abstract/abstract.tex) [6] (./sections/introduction/introduction.tex
+[5] (./sections/abstract/abstract.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 13--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--197
+
+ []
+
+[6] (./sections/introduction/introduction.tex
 Package acronym Info: Label `acro:llm' newly defined as it shall be overridden
 although it is yet undefined on input line 19.
 ) (./sections/essentials/essentials.tex) (./sections/implementation/implementation.tex
@@ -1123,7 +1133,7 @@ Here is how much of TeX's memory you used:
  42 hyphenation exceptions out of 8191
  108i,12n,107p,11252b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on main.pdf (9 pages, 176968 bytes).
+Output written on main.pdf (9 pages, 177122 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
