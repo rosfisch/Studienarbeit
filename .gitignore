@@ -30,6 +30,7 @@
 *.nls
 *.out
 *.pdf
+!main.pdf
 *.pyg
 *.run.xml
 *.snm
@@ -40,7 +41,6 @@
 *.toc
 *.vrb
 *.xdy
-*.pdf
 *.xml
 *blx.bib
 .bak 
