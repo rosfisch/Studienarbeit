@@ -40,8 +40,10 @@
 *.toc
 *.vrb
 *.xdy
+*.pdf
 *.xml
 *blx.bib
 .bak 
 .mtc
 build/
+*(busy)
