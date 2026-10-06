@@ -20,6 +20,13 @@
 \end{itemize}
 \subsubsection{Länge des Kontextfensters}
 \subsubsection{Nachdenken des Modells}
+In diesem Projekt wurde sich gegen das Reasoning des Modells entschieden.
+Zum einen steigt die Antwortzeit durch das Reasoning exponentiell und
+es werden mehr Token für eine Antwort benötigt. Daneben unterstützen viele
+der kleineren Modelle diese Fähgikeit in der Regel auch nicht. Zudem soll
+das Modell/die Modelle nicht durch das Nachdenken mögliche Fehler/Halluzinationen
+erkennen können. Ziel dieser Arbeit ist jede kleine Hallizination zu erkennen
+und zu nutzen, da wäre das Nachdenken des Modells eher hinderlich.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Short Story} 
 \begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|
@@ -49,9 +56,30 @@ verlassen, weil sie ein “einfaches Leben” für wertlos hält.&
 \end{longtable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Wahl des Studientyps}
-Within-subjects design - Jede Testperson soll alle möglichen Testszenarien durchführen.
+Die Studie wurde nach dem Within-Subjects-Design aufgebaut. Hier durchläuft
+jede Testperson alle Bedingungen der unabhängigen Variablen wie beispielsweise
+die Reaktionszeit oder die Korrekheit der Klassifikation. So fungiert jede
+Testperson als ihre eigene Kontrolle. Es wurde keine seperate Kontrollgruppe
+befragt. \\
+Der Vorteil des Designs liegt darin, dass personenbezogene Störvariablen 
+wie Vorwissen über \ac{ki}, die Kurzgeschichten oder das persönliche Empfinden
+gegenüber den Ergebnissen der \ac{ki}, über die Bedingungen konstant gehlaten werden. [Quelle] 
+Dieser Effekt führt dazu, dass die Fehlervarianz reduziert wird und präzisere
+Aussagen über den tatsächlichen Effekt der Quellenbelege getroffen werden kann. [Quelle] \\
+Jedoch bringt dieses Design auch Nachteile mit, die die Ergebnisse beeinflussen können.
+Zunächst sei der Carry-over-Effekt zu erwähnen, bei dem sich Effekte aus dem
+ersten Testlauf auf die Ergebnisse des zweiten Testlaufs übertragen. [https://statistikguru.de/lexikon/carry-over-effekt.html] Um dieses
+Problem einzudämmen wurden zwei unabhängige Kurzgeschichten gewählt und die 
+Fragen an die \ac{ki} angepasst. Darüber hinaus kann der Hawthrone-Effekt
+zu veränderten/verfälschten Ergebnissen führen. 
+
+Weiter können die Ergebnisse nur begrenzt generalisiert werden.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Nutzerstudie - Aufbau}
+\begin{itemize}
+  \item Gewählte Stichprobengröße: 50 Teilnehmende
+  \item Erfassung von Störvariabvlen: Vorkenntnisse von KI und Kurzgeschichten
+\end{itemize}
 \begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|
   >{\raggedright\arraybackslash}p{9cm}|}
 \hline
@@ -68,17 +96,21 @@ Antwort & Mit Quellenmarkierung und Quellenvorschau\\ \hline
 \end{longtable}
 \subsubsection{Nutzerstudie - Tools}
 \subsubsection{Nutzerstudie - Hypothesen}
+Im folgenden werden die vier Hypothesen beschrieben, die untersucht werden sollen:
 \begin{longtable}{|>{\raggedright\arraybackslash}p{1cm}|
   >{\raggedright\arraybackslash}p{11cm}|}
 \hline
 \textbf{ID} & \textbf{Ausformulierte Hypothese} \\ \hline
 \endhead
-\textbf{H1} & Nutzer erkennen mit Quellenvisualisierung mehr Halluzinationen als Nutzer ohne Visualisierung \\ \hline
-\textbf{H2} & Quellenvisualisierung erhöht die subjektive Entscheidungssicherheit  \\ \hline
-\textbf{H3} & Nutzer beurteilen Antworten mit belegten Aussagen als vertrauenswürdiger\\ \hline
-\textbf{H4} & Eine Visualisierung unbelegter Aussagen erhöht zwar die 	Halluzinationserkennung, führt aber auch zu mehr Fehlalarmen bei korrekt formulierten Aussagen.\\ \hline
+\textbf{H1} & Nutzende erkennen mit Quellenvisualisierung mehr Halluzinationen als Nutzende ohne diese Bedingungen. \\ \hline
+\textbf{H2} & Quellenvisualisierung erhöht die subjektive Entscheidungssicherheit.  \\ \hline
+\textbf{H3} & Belegte Aussagen werden als vertrauenswürdiger Bewertet und dieser Effekt ist mit Visualisierung stärker.\\ \hline
+\textbf{H4} & Eine Visualisierung unbelegter Aussagen erhöht zwar die Halluzinationserkennung, führt aber auch zu mehr Fehlmeldungen bei korrekt formulierten Aussagen.\\ \hline
 \caption{Übersicht der zu untersuchenden Hypothesen}
 \end{longtable}
+%Hier noch ausformulieren?
+
+% Hier auf frühere Arbeiten eingehen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Probleme}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
