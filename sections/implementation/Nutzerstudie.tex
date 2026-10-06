@@ -1,6 +1,6 @@
-\subsection{Nutzerstudie-Aufbau/Tools}
+\subsection{Nutzerstudie}
 Die Nutzerstudie soll untersuchen, wie gut Nutzer*innen halluzinierte Antworten eines Large Language Models (LLM) erkennen können. Hierbei soll analysiert werden, ob verschiedene Darstellungen einer Quellenreferenzierung die erkennbarkeit verbessern und die benötigte Zeit für die Bewertung reduzieren kann. \newline \noindent
-Zusätzlich sollen neben der tatsächlichen Erkennungsleistung auch die subjektive Sicheheit der Teilnehmer*innen bei der Bewertung erfasst werden. Damit soll festgestellt werden, ob dieses verschiedenen Darstellungen zu einer höhren wahrgenommen Sicherheit beziehungsweise vertrauen zum LLM führen und in welchem kontext es zum tatsächlichen Korrektheit der Bewertungen steht. \newline
+Zusätzlich sollen neben der tatsächlichen Erkennungsleistung auch die subjektive Sicheheit der Teilnehmer*innen bei der Bewertung erfasst werden. Damit soll festgestellt werden, ob dieses verschiedenen Darstellungen zu einer höhren wahrgenommen Sicherheit beziehungsweise vertrauen zum LLM führen und in welchem kontext es zum tatsächlichen Korrektheit der Bewertungen steht.
 \subsubsection{Versuchsaufbau}
 Die basis der Nutzerstudie bildet eine Shortstory und ein darauf basierender Fragenkatalog. Dabei beziehen sich die Fragen sowohl auf explizit im Text enthaltenen Informationen als auch auf Zusammenhänge und interpreationen, die sich aus dem Text ergeben können. Zusätzliche werden weitere Fragen eingeschlossen, welche falsche oder widersprächliche Annahmen enthalten. Als Beispiel wäre die Frage \enquote{Warum fliegt Emily nach Berlin?}, obwohl aus der Shortstory selbst hervorgeht, dass Emily nach London fliegt. \newline \noindent
 Diese Shortstory wird mit dem zugehörigen Fragenkatalog einem LLM zur Verfügung gestellt. Dieses Modell beantwortet anschließend auf Basis des bereitgestellten Textes die Fragen. Zusätzlich wird dazu das LLM angewiesen, die relevanten Textstellen welche das LLM zur generierung der Antwort verwendet hat auszugeben. Hierbei sollen sowohl die entsprechende Zeilen bzw. Textabschnitte als auch die relevanten Textstellen innerhalb dieses Abschnittes besonders hervorgehoben werden.
@@ -10,6 +10,8 @@ Die Teilnehmer*innen werden anschließend in drei Versuchsgruppen aufgeteilt. Da
     \item Referenzierung der relevanten Zeilen beziehungsweise Textabschnitte
     \item Referenzierung der relevanten Textabschnitte mit zusätzlicher hervorhebung der für die Antwort relevanten Textabschnitte
 \end{enumerate} \noindent
+
+\subsubsection{Messgrößen}
 Die Aufgabe der Teilnehmer*innen besteht darin, die Antworten des LLMs zu überprüfen und zu bewerten, ob diese durch den vorliegenden gestützt werden oder halluzinierte Inhalte enthalten.
 Für jede Antwort werden folgende Messgrößen erfasst:
 \begin{enumerate}
