@@ -1,20 +1,21 @@
-\subsection{Nutzerstudie - Aufbau/Tools}
-Anhand der Nutzerstudie soll die erkennbarkeit von Halluzinierten Generierten antworten eines LLMs aufgezeigt werden. Zudem soll überprüft werden, welche bzw. ob ansätze zu einer steigerung der erkennbarkeit von Halluzinierten antworten führt und ob hierbei diese schneller vom nutzer erkannt werden könne. Zudem soll festgestellt werden, ob eine person sicherer beim erkennen von Halluzinationen wird, beim verwenden gewisser hilfsmittel? Und ob diese selbsteinschätzung mit der tatsächlichen einschätzung übereinstimmt.
-\\
+\subsection{Nutzerstudie-Aufbau/Tools}
+Die Nutzerstudie soll untersuchen, wie gut Nutzer*innen halluzinierte Antworten eines Large Language Models (LLM) erkennen können. Hierbei soll analysiert werden, ob verschiedene Darstellungen einer Quellenreferenzierung die erkennbarkeit verbessern und die benötigte Zeit für die Bewertung reduzieren kann. \newline \noindent
+Zusätzlich sollen neben der tatsächlichen Erkennungsleistung auch die subjektive Sicheheit der Teilnehmer*innen bei der Bewertung erfasst werden. Damit soll festgestellt werden, ob dieses verschiedenen Darstellungen zu einer höhren wahrgenommen Sicherheit beziehungsweise vertrauen zum LLM führen und in welchem kontext es zum tatsächlichen Korrektheit der Bewertungen steht. \newline
 \subsubsection{Versuchsaufbau}
-Die basis der Nutzerstudie bildet eine Shortstory und ein darauf basierender Fragenkatalog. Innerhalb dieses Fragenkatalogs werden nicht nur inhaltliche dinge abgefragt, sondern auch interpreationen aus dem bestehenden text. Bspw. "Emily fliegt nach London" => "Warum fliegt Emily nach Berlin?".
-Diese Shortstory und der darauf basierende Fragenkatalog wird einem LLM zur verfügung gestellt, welches diese Fragen beantwortet. Hierbei geben wir dem LLM die anforderung, gegebene Antworten mit der entsprechenden textstelle zu referenzieren und zusätzlich den jeweiligen textabschnitt auszugeben und die wichtigen stellen die zur entscheidung geführt haben zu markieren.
-Die Teilnehmer der Nutzerstudie werden nun in drei Gruppen aufgeteilt. Alle Gruppen erhalten hierbei die konkreten antworten welche das LLM gegeben hat und die jeweilige Shortstory. Zusätzlich gibt es die folgenden unterschiede innerhalb der drei Nutzergruppen:
+Die basis der Nutzerstudie bildet eine Shortstory und ein darauf basierender Fragenkatalog. Dabei beziehen sich die Fragen sowohl auf explizit im Text enthaltenen Informationen als auch auf Zusammenhänge und interpreationen, die sich aus dem Text ergeben können. Zusätzliche werden weitere Fragen eingeschlossen, welche falsche oder widersprächliche Annahmen enthalten. Als Beispiel wäre die Frage \enquote{Warum fliegt Emily nach Berlin?}, obwohl aus der Shortstory selbst hervorgeht, dass Emily nach London fliegt. \newline \noindent
+Diese Shortstory wird mit dem zugehörigen Fragenkatalog einem LLM zur Verfügung gestellt. Dieses Modell beantwortet anschließend auf Basis des bereitgestellten Textes die Fragen. Zusätzlich wird dazu das LLM angewiesen, die relevanten Textstellen welche das LLM zur generierung der Antwort verwendet hat auszugeben. Hierbei sollen sowohl die entsprechende Zeilen bzw. Textabschnitte als auch die relevanten Textstellen innerhalb dieses Abschnittes besonders hervorgehoben werden.
+Die Teilnehmer*innen werden anschließend in drei Versuchsgruppen aufgeteilt. Dabei werden allen Gruppen die vom LLM generierten Antworten und die vollständige Shortstory zur Verfügung gestellt. Die gruppen unterscheiden sich dabei anhand der Darstellungsform der Quellenbezüge:
 \begin{enumerate}
-    \item keine referenzierung
-    \item Zeilen referenzierung
-    \item Refernezierung mit markierter textstelle
-\end{enumerate}
-Die Aufgabe der Teilnehmer ist es jetzt, die Antworten des LLMs zu überprüfen und Halluzinierte Antworten zu identifizieren. Dabei Prüfen wir:
+    \item Keine Quellenreferenzierung
+    \item Referenzierung der relevanten Zeilen beziehungsweise Textabschnitte
+    \item Referenzierung der relevanten Textabschnitte mit zusätzlicher hervorhebung der für die Antwort relevanten Textabschnitte
+\end{enumerate} \noindent
+Die Aufgabe der Teilnehmer*innen besteht darin, die Antworten des LLMs zu überprüfen und zu bewerten, ob diese durch den vorliegenden gestützt werden oder halluzinierte Inhalte enthalten.
+Für jede Antwort werden folgende Messgrößen erfasst:
 \begin{enumerate}
-    \item Wie schnell die Teilnehmer die Antworten überprüfen können?
-    \item Wie sicher sich die Teilnehmer fühlen beim identifizieren der Antworten?
-    \item Wie viele Antworten die Teilnehmer korrekt einordnen?
+    \item Bearbeitungszeit um eine Bewertung abzuschließen
+    \item subjektive Konfidenzbewertung der Teilnehmer*innen auf einer von 1 \enquote{sehr unsicher} bis 5 \enquote{sehr sicher} \cite{robinsonUsingMultiitemPsychometric2018}
+    \item Korrektheit der Einordnung der Antwort als gestützt beziehungsweise halluziniert.
 \end{enumerate}
 
 
