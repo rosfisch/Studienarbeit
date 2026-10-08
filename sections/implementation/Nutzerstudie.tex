@@ -1,17 +1,31 @@
 \subsection{Nutzerstudie}
 Die Nutzerstudie soll untersuchen, wie gut Nutzer*innen halluzinierte Antworten eines Large Language Models (LLM) erkennen können. Hierbei soll analysiert werden, ob verschiedene Darstellungen einer Quellenreferenzierung die erkennbarkeit verbessern und die benötigte Zeit für die Bewertung reduzieren kann. \newline \noindent
 Zusätzlich sollen neben der tatsächlichen Erkennungsleistung auch die subjektive Sicheheit der Teilnehmer*innen bei der Bewertung erfasst werden. Damit soll festgestellt werden, ob dieses verschiedenen Darstellungen zu einer höhren wahrgenommen Sicherheit beziehungsweise vertrauen zum LLM führen und in welchem kontext es zum tatsächlichen Korrektheit der Bewertungen steht.
+
+
 \subsubsection{Versuchsaufbau}
 Die basis der Nutzerstudie bildet eine Shortstory und ein darauf basierender Fragenkatalog. Dabei beziehen sich die Fragen sowohl auf explizit im Text enthaltenen Informationen als auch auf Zusammenhänge und interpreationen, die sich aus dem Text ergeben können. Zusätzliche werden weitere Fragen eingeschlossen, welche falsche oder widersprächliche Annahmen enthalten. Als Beispiel wäre die Frage \enquote{Warum fliegt Emily nach Berlin?}, obwohl aus der Shortstory selbst hervorgeht, dass Emily nach London fliegt. \newline \noindent
 Diese Shortstory wird mit dem zugehörigen Fragenkatalog einem LLM zur Verfügung gestellt. Dieses Modell beantwortet anschließend auf Basis des bereitgestellten Textes die Fragen. Zusätzlich wird dazu das LLM angewiesen, die relevanten Textstellen welche das LLM zur generierung der Antwort verwendet hat auszugeben. Hierbei sollen sowohl die entsprechende Zeilen bzw. Textabschnitte als auch die relevanten Textstellen innerhalb dieses Abschnittes besonders hervorgehoben werden.
-Die Teilnehmer*innen werden anschließend in drei Versuchsgruppen aufgeteilt. Dabei werden allen Gruppen die vom LLM generierten Antworten und die vollständige Shortstory zur Verfügung gestellt. Die gruppen unterscheiden sich dabei anhand der Darstellungsform der Quellenbezüge:
+Für die Nutzerstudie werden drei unterschiedliche Versuchsbedingungen definiert. Diese unterscheiden sich inder Art und Weise, wie die Quellenreferenzierung der LLM-Antworten dargestellt werden.
 \begin{enumerate}
     \item Keine Quellenreferenzierung
     \item Referenzierung der relevanten Zeilen beziehungsweise Textabschnitte
     \item Referenzierung der relevanten Textabschnitte mit zusätzlicher hervorhebung der für die Antwort relevanten Textabschnitte
 \end{enumerate} \noindent
-\subsubsection{Studientyp}
-Within-subjects design - Jede Testperson soll alle möglichen Testszenarien durchführen.
+
+
+\subsubsection{Studiendesign und Versuchsdurchführung}
+Um fehler durch vorwissen individueller Teilnehmer*innen zu vermeiden, wird für die Nutzerstudie ein Within-subject Design gewählt. Dabei soll jede Testperson alle drei der erwähnten Versuchsbedingungen durchführen. Dabei soll die Reihenfolge der einzelnen bedingungen unter den Teilnehmer*innen randomisiert werden, um Reihenfolgeeffekte zu vermeiden. \newline \noindent
+Der Fragenkatalog wird hierbei in drei gleich große Teile aufgeteilt, so kann für jede Testperson ein anderer Teil des Fragenkatalogs in einem der drei Bedingungen beantwortet werden. Diese zuweisung des Fragenkatalogs zu den jeweiligen Bedingungen wird auch randomisiert, um mögliche Störfaktoren auf die Ergebnisse zu minimieren. \noindent
+
+
+%Within-subjects
+%Zuweisung der Bedingungen
+% Randomisierung / Counterbalancing
+%Ablauf für Teilnehmer*innen
+
+
+
 \subsubsection{Messgrößen}
 Die Aufgabe der Teilnehmer*innen besteht darin, die Antworten des LLMs zu überprüfen und zu bewerten, ob diese durch den vorliegenden gestützt werden oder halluzinierte Inhalte enthalten.
 Für jede Antwort werden folgende Messgrößen erfasst:
@@ -20,6 +34,12 @@ Für jede Antwort werden folgende Messgrößen erfasst:
     \item subjektive Konfidenzbewertung der Teilnehmer*innen auf einer von 1 \enquote{sehr unsicher} bis 5 \enquote{sehr sicher} \cite{robinsonUsingMultiitemPsychometric2018}
     \item Korrektheit der Einordnung der Antwort als gestützt beziehungsweise halluziniert.
 \end{enumerate}
+
+\subsubsection{Teilnehmer*innen}
+%Anzahl
+%Voraussetzungen
+%demografische Daten / LLM-Erfahrung etc.
+
 
 
 
