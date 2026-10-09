@@ -35,6 +35,7 @@
 *.snm
 *.synctex.gz
 *.tex.backup
+*SAVE-ERROR
 *.tex~
 *.thm
 *.toc
