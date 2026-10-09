@@ -30,6 +30,7 @@
 *.nls
 *.out
 *.pdf
+!main.pdf
 *.pyg
 *.run.xml
 *.snm
@@ -45,3 +46,4 @@
 .bak 
 .mtc
 build/
+*(busy)
