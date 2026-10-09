@@ -1,5 +1,6 @@
 \documentclass[12pt]{scrartcl}
-
+% Quotes
+\usepackage{csquotes}
 %% twocolumn
 \usepackage{amsmath,amssymb}  % erleichtert Mathe 
 \usepackage{enumerate}% schicke Nummerierung
@@ -61,6 +62,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[backend=biber,style=numeric, sorting=none]{biblatex}
 \addbibresource{quellen/quellen.bib}
+\addbibresource{quellen/Studienarbeit.bib}
 
 % erlaubt es, Sätze, Definitionen etc. einfach durchzunummerieren.
 \newtheorem{satz}{Satz}[section] % Nummerierung nach Abschnitten
@@ -142,76 +144,76 @@
 \begin{onehalfspacing}
 
   \colorlet{numb}{magenta!60!black}
-\begin{titlepage}
-  \centering
-  \begin{minipage}[b]{0.35\textwidth} 
-    \includegraphics[width=\linewidth]{images/DHBW-Logo.png}
-  \end{minipage}\hfill\par\vspace{1.3cm}
-  {\scshape\Large Studienarbeit\par}
-  \vspace{1cm}
-  {\huge\bfseries Unterstützt die Visualisierung von Quellenbezügen einer künstlichen 
-  Intelligenz, Nutzer bei der Erkennung von KI-Halluzinationen?\par}
-  \vspace{2.5cm}
-  {\Large\itshape Leon Salenbacher und Rosalie Fischer\par}
-  \vspace{0.5cm}
-  {\large \today\par}
-  \vfill
-  \begin{table}[b]
-    \begin{center}
-      \begin{tabular}{rcl} 
-          \large $Kurs$ & & $$\textsc{TINF24C}$$ \\ 
-          \large $Matrikelnummer$ & & $$\textsc{8368668, 3045197}$$\\ 
-          \large $Bearbeitungszeitraum$ & & $$\textsc{12 Wochen}$$ \\ 
-          \large$Betreuer\, der \,DHBW$ & & $$\textsc{Daniel Amor}$$ \\ 
-      \end{tabular}
-    \end{center}
-  \end{table}
-\end{titlepage}
+  \begin{titlepage}
+    \centering
+    \begin{minipage}[b]{0.35\textwidth}
+      \includegraphics[width=\linewidth]{images/DHBW-Logo.png}
+    \end{minipage}\hfill\par\vspace{1.3cm}
+    {\scshape\Large Studienarbeit\par}
+    \vspace{1cm}
+    {\huge\bfseries Unterstützt die Visualisierung von Quellenbezügen einer künstlichen
+      Intelligenz, Nutzer bei der Erkennung von KI-Halluzinationen?\par}
+    \vspace{2.5cm}
+    {\Large\itshape Leon Salenbacher und Rosalie Fischer\par}
+    \vspace{0.5cm}
+    {\large \today\par}
+    \vfill
+    \begin{table}[b]
+      \begin{center}
+        \begin{tabular}{rcl}
+          \large $Kurs$                 &  & $$\textsc{TINF24C}$$          \\
+          \large $Matrikelnummer$       &  & $$\textsc{8368668, 3045197}$$ \\
+          \large $Bearbeitungszeitraum$ &  & $$\textsc{12 Wochen}$$        \\
+          \large$Betreuer\, der \,DHBW$ &  & $$\textsc{Daniel Amor}$$      \\
+        \end{tabular}
+      \end{center}
+    \end{table}
+  \end{titlepage}
 
-\author{Rosalie Fischer}
-\subtitle{Praxisbericht T1000}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\tableofcontents
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\listoffigures
-\listoftables
-\lstlistoflistings
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-\section*{Abkürzungsverzeichnis}
-\subfile{sections/abbreviations/abbreviations.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\addcontentsline{toc}{section}{Ehrenwörtliche Erklärung}
-\section*{Ehrenwörtliche Erklärung}
-\subfile{sections/erklaerung/erklaerung.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\addcontentsline{toc}{section}{Zusammenfassung/Abstract}
-\section*{Zusammenfassung/Abstract}
-\subfile{sections/abstract/abstract.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{Einleitung}
-\subfile{sections/introduction/introduction.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Grundlagen}
-\subfile{sections/essentials/essentials.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Umsetzung}
-\subfile{sections/implementation/implementation.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Diskussion}
-\subfile{sections/discussion/discussion.tex}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Mögliche Erweiterungen}\label{sec:Erweiterungen}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Schluss}
-\subfile{sections/finish/finish.tex}
-\printbibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \author{Rosalie Fischer}
+  \subtitle{Studienarbeit}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \tableofcontents
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \listoffigures
+  \listoftables
+  \lstlistoflistings
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+  \section*{Abkürzungsverzeichnis}
+  \subfile{sections/abbreviations/abbreviations.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \addcontentsline{toc}{section}{Ehrenwörtliche Erklärung}
+  \section*{Ehrenwörtliche Erklärung}
+  \subfile{sections/erklaerung/erklaerung.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \addcontentsline{toc}{section}{Zusammenfassung/Abstract}
+  \section*{Zusammenfassung/Abstract}
+  \subfile{sections/abstract/abstract.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \section{Einleitung}
+  \subfile{sections/introduction/introduction.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Grundlagen}
+  \subfile{sections/essentials/essentials.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Umsetzung}
+  \subfile{sections/implementation/implementation.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Diskussion}
+  \subfile{sections/discussion/discussion.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Mögliche Erweiterungen}\label{sec:Erweiterungen}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Schluss}
+  \subfile{sections/finish/finish.tex}
+  \printbibliography
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{onehalfspacing}
 \end{document}

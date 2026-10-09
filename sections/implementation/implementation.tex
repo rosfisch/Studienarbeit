@@ -1,4 +1,4 @@
-\documentclass[../../main.text]{subfiles}
+\documentclass[../../main.tex]{subfiles}
 %Deutsche Sprache
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
@@ -10,64 +10,19 @@
 
 \begin{document}
 \begin{doublespace}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wahl des Modells}
-\begin{itemize}
-    \item Qwen vl-4B
-    \item Mistral 3B
-    \item Gemma 4 12B QAT
-    \item smollm2-360m-instruct
-\end{itemize}
-\subsubsection{Länge des Kontextfensters}
-\subsubsection{Nachdenken des Modells}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Short Story} 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|
-  >{\raggedright\arraybackslash}p{6cm}|
-  >{\raggedright\arraybackslash}p{4cm}|}
-\hline
-\textbf{Gechichte} & \textbf{Kurze Zusammenfassung} & \textbf{Modellen bekannt?} \\ \hline
-\endhead
-\href{https://www.babelmatrix.org/works/hr/Nazor%2C_Vladimir-1876/Galiotova_pesan}{Galiotova pesan} (Vladimir Nator) &
-Eine Geschichte über eine Vorstellung über eine Reise in einem Boot &
-Gut geeignet \\ \hline
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Wahl des Modells}
+  \subsubsection{Länge des Kontextfensters}
+  \subsubsection{Nachdenken des Modells}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\href{https://www.lektire.hr/suma-striborova/}{Šuma Striborova} (Branko Ćopić) &
-Der Sohn verliebt sich in ein Mädchen das in der Wirklichkeit eine verzauberte Schlange ist. Seine 
-Mutter kämpft gegen die Magie und versucht ihren Sohn zu retten. &
-Eher schlecht geeignet, wobei Qwen 3-vl-4B es nicht kennt \\ \hline
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \input{Nutzerstudie.tex}
+  \input{story.tex}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\href{https://www.poezija.hr/zlatna-lada-vladimir-nazor/}{Zlatna lađa} (Vladimir Nazor) &
-Er möchte dass sein Sohn die Welt erlebt, weil er es nicht konnte. &
-\\ \hline
-
-\href{https://www.rastko.rs/rastko-bl/umetnost/knjizevnost/bcopic/bcopic-jezurka_l.html}{Ježeva kućica} (Branko Ćopić) &
-Igel, stolz auf sein Haus. Der Fuchs versucht ihn dazu zu bringen, sein Haus zu 
-verlassen, weil sie ein “einfaches Leben” für wertlos hält.&
-\\ \hline
-\caption{Verschiedene Geschichten die getestet wurden}
-\end{longtable}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Wahl des Studientyps}
-Within-subjects design - Jede Testperson soll alle möglichen Testszenarien durchführen.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Nutzerstudie - Aufbau/Tools}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|
-  >{\raggedright\arraybackslash}p{9cm}|}
-\hline
-\textbf{Gechichte} & \textbf{Kurze Zusammenfassung} \\ \hline
-\endhead
-Antwort & Ohne Quelle belegt \\ \hline
-
-Antwort & Mit Quelle, aber ohne Quellenmarkierung \\ \hline
-
-Antwort & Mit aussagenbezogener Quellenmarkierung\\ \hline
-
-Antwort & Mit Quellenmarkierung und Quellenvorschau\\ \hline
-\caption{Testfälle der Nutzerstudie}
-\end{longtable}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Probleme}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \subsection{Probleme}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{doublespace}
 \end{document}
