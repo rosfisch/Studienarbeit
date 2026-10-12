@@ -1,2 +1,24 @@
 \subsection{Halluzinationen}
-Halluzinationen
+Als Halluzinationen bezeichnet man im kontext von Large Language Models (LLMs) die generierung von Informationen, welche nicht auf den Trainingsdaten basieren. 
+Diese Informationen können sprachlich plausibel und korrekt erscheinen, sind jedoch faktisch nicht durch die verwendeten Trainingsdaten gedeckt. 
+Dieses Phänomen wird im bereich der Natural Language Generation (NLG) als Halluzination bezeichnet.\autocite[3]{jiSurveyHallucinationNatural2023}
+\newline \noindent
+Desweiteren unterscheidet man zwischen zwei Arten von Halluzinationen:
+\begin{enumerate}
+    \item \textbf{Intrinsic Halluzinationen:} Hier kann der generierte Inhalt teilweise durch die quelle gestützt werden. \autocite[3]{jiSurveyHallucinationNatural2023}
+    \item \textbf{Extrinsic Halluzinationen:} Hier kann der generierte Inhalt nicht durch die Quelle gestützt werden. \autocite[3]{jiSurveyHallucinationNatural2023}
+\end{enumerate}
+
+\subsubsection{Terminologie}
+%%%On faithfulness and factuality in abstractive summarization. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics
+\begin{enumerate}
+    \item Faithfulness: Informationen konsistent und korrekt aus den gegebenen Quellen wiedergeben. \autocite[5]{jiSurveyHallucinationNatural2023}
+    \item Factuality: Beschreibt die Faktische korrektheit des generierten Inhalts, basierend auf einem gegebenen Wissensstand. 
+            Es beschreibt somit auch eine Faktenbasierte generierung der Antwort. Bei einem Factuality ist der fact als art 'Welt Wissen' zu verstehen. \autocite[5]{jiSurveyHallucinationNatural2023}
+
+        
+        \end{enumerate}
+\subsubsection{Cause}
+
+Note:
+- Relevanz nicht nur für nutzer sondern systeme die llms einsetzen und vollautomatisch laufen. Halluzinierte antworten können zu großen problemen führen.
