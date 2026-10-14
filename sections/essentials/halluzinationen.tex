@@ -1,6 +1,6 @@
 \subsection{Halluzinationen}
-Als Halluzinationen bezeichnet man im kontext von Large Language Models (LLMs) die generierung von Informationen, welche nicht auf den Trainingsdaten basieren. 
-Diese Informationen können sprachlich plausibel und korrekt erscheinen, sind jedoch faktisch nicht durch die verwendeten Trainingsdaten gedeckt. 
+Als Halluzinationen bezeichnet man im kontext von Large Language Models (LLMs) die generierung von Informationen, welche nicht auf den Trainingsdaten basieren.
+Diese Informationen können sprachlich plausibel und korrekt erscheinen, sind jedoch faktisch nicht durch die verwendeten Trainingsdaten gedeckt.
 Dieses Phänomen wird im bereich der Natural Language Generation (NLG) als Halluzination bezeichnet.\autocite[3]{jiSurveyHallucinationNatural2023}
 \newline \noindent
 Desweiteren unterscheidet man zwischen zwei Arten von Halluzinationen:
@@ -13,12 +13,42 @@ Desweiteren unterscheidet man zwischen zwei Arten von Halluzinationen:
 %%%On faithfulness and factuality in abstractive summarization. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics
 \begin{enumerate}
     \item Faithfulness: Informationen konsistent und korrekt aus den gegebenen Quellen wiedergeben. \autocite[5]{jiSurveyHallucinationNatural2023}
-    \item Factuality: Beschreibt die Faktische korrektheit des generierten Inhalts, basierend auf einem gegebenen Wissensstand. 
-            Es beschreibt somit auch eine Faktenbasierte generierung der Antwort. Bei einem Factuality ist der fact als art 'Welt Wissen' zu verstehen. \autocite[5]{jiSurveyHallucinationNatural2023}
+    \item Factuality: Beschreibt die Faktische korrektheit des generierten Inhalts, basierend auf einem gegebenen Wissensstand.
+          Es beschreibt somit auch eine Faktenbasierte generierung der Antwort. Bei einem Factuality ist der fact als art 'Welt Wissen' zu verstehen. \autocite[5]{jiSurveyHallucinationNatural2023}
 
-        
-        \end{enumerate}
+
+\end{enumerate}
 \subsubsection{Cause}
 
 Note:
 - Relevanz nicht nur für nutzer sondern systeme die llms einsetzen und vollautomatisch laufen. Halluzinierte antworten können zu großen problemen führen.
+
+\subsubsection{Halluzination from data}
+Halluzinationen können durch viele unterschiedliche gründe entstehen. Im folgenden führen wir diese auf und
+
+\begin{enumerate}
+    \item \textbf{Heuristic Data Collection}
+    \item \textbf{Innate Divergence}
+    \item \textbf{Imperfect Representation Learning}
+          Ein Encoder welcher ein falsches verständnis der zu verarbeitenden Daten hat. Er also zuvor einen falschen zusammenhang zwischen den trainingsdaten erlernt hat, führt schlussendlich zu abweichenden antworten, basierend auf dem gegebenen Input. \autocite[6]{jiSurveyHallucinationNatural2023}
+    \item \textbf{Enrroneus Decoding}
+
+    \item \textbf{Exposure Bias}
+          Wird der decoder darauf trainiert, denn nächsten token vorherzusehen, basierend auf einer ground-truth prefix sequenz. Dies führt allerdings dazu, dass der nächste token basierend auf der historischen sequenz der vorangegangenen von ihm generierten antworten. Dieses problem wird deutlicher, wenn die Ziel sequent länger wird. \autocite[6]{jiSurveyHallucinationNatural2023}
+    \item \textbf{Parametric Knowledge Bias}
+\end{enumerate}
+
+\subsubsection{Zukunft}
+Frage: wird es in zukunft weiter halluzinationen geben? wird es weniger? 
+Wird gefahr ggf. größer da vertrauen wächst und werden dadurch generierte inhalte seltener übrprüft und eine erkennung der halluzinierten antworten sinkt deshalb stärker?
+
+\subsubsection{Probleme}
+Ein generierter Inhalt eines LLMs welcher Halluzinierte Inhalte enthält, kann zu einigen problemen führen. Entscheident für die tragweite der folgen ist die frühzeitige erkennung dieser Inhalte. In dieser arbeit Untersuchen wir dafür konkrete möglichkeiten, ob und wie effektiv Nutzer bei der erkennung halluzinierter Inhalte unterstützt werden können.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{images/Halluzination_userReliesOnInformation.png}
+    \caption{Halluzination user relies on Information \autocite[3]{leiserHILLHallucinationIdentifier2024}}
+    \label{fig:beispiel}
+\end{figure}
