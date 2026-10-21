@@ -4,10 +4,12 @@ Diese Informationen können sprachlich plausibel und korrekt erscheinen, sind je
 Dieses Phänomen wird im bereich der Natural Language Generation (NLG) als Halluzination bezeichnet.\autocite[3]{jiSurveyHallucinationNatural2023}
 \newline \noindent
 Desweiteren unterscheidet man zwischen zwei Arten von Halluzinationen:
-\begin{enumerate}
-    \item \textbf{Intrinsic Halluzinationen:} Hier kann der generierte Inhalt teilweise durch die quelle gestützt werden. \autocite[3]{jiSurveyHallucinationNatural2023}
+\begin{itemize}
+    \item \textbf{intrinsische Halluzinationen:}
+          Eine intrinsische Halluzination ist ein generierter Inhalt, welcher im Widerspruch zu den Informationen der zugrunde liegenden Quelle steht. Dabei können einzelne Bestandteile der generierten Aussage durch die Quelle gestützt werden. Entscheidend für die Einordnung als intrinsische Halluzination ist jedoch, dass mindestens eine Information der Aussage dem Quelleninhalt widerspricht. \autocite[3]{jiSurveyHallucinationNatural2023}\newline
+          Gogoulou et al. erweitern dabei diese Definition und betrachten generierte Aussagen bereits dann als intrinsische Halluzination, wenn sie sich nicht logisch aus dem Quellinhalt ableiten lassen. Dazu zählen neben widersprüchlichen Aussagen auch solche, die zusätzliche, durch die Quelle nicht gestützte Informationen enthalten. \autocite[1]{gogoulouCanLLMsDetect2025}
     \item \textbf{Extrinsic Halluzinationen:} Hier kann der generierte Inhalt nicht durch die Quelle gestützt werden. \autocite[3]{jiSurveyHallucinationNatural2023}
-\end{enumerate}
+\end{itemize}
 
 Nutzer vertrauen stärker einer überkonfidenten erfundenen antwort. \autocite[13]{kalaiWhyLanguageModels2025}
 
@@ -67,3 +69,6 @@ Diese Probleme und Gefahren eines autonomen prozesses wird in dieser arbeit nich
     \caption{Halluzination user relies on Information \autocite[3]{leiserHILLHallucinationIdentifier2024}}
     \label{fig:beispiel}
 \end{figure}
+
+\subsection{Halluzinationen erkennen?}
+\autocite{gogoulouCanLLMsDetect2025}
